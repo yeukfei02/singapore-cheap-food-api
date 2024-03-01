@@ -1,0 +1,33 @@
+service: singapore-cheap-food-api
+
+frameworkVersion: '3'
+
+provider:
+  name: google
+  stage: prod
+  runtime: python39
+  region: asia-southeast1
+  project: singapore-cheap-food-api
+  credentials: ~/.gcloud/keyfile.json
+  memorySize: 1024
+  timeout: 540s
+
+functions:
+  main:
+    handler: main_handler
+    events:
+      - http: "GET /"
+        
+  findAddress:
+    handler: find_address_handler
+    events:
+      - http: "GET /find-address"
+    memorySize: 2048
+        
+  getCheapFood:
+    handler: get_cheap_food_handler
+    events:
+      - http: "GET /cheap-food"
+
+plugins:
+  - serverless-google-cloudfunctions
