@@ -1,0 +1,17 @@
+{
+  "name": "singapore-cheap-food-api",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/yeukfei02/singapore-cheap-food-api.git",
+  "author": "Donald Wu <yeukfei02@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless": "^3.38.0",
+    "serverless-google-cloudfunctions": "^4.6.0"
+  },
+  "scripts": {
+    "deploy": "serverless deploy",
+    "package": "serverless package",
+    "remove": "serverless remove"
+  }
+}
