@@ -10,7 +10,7 @@ def find_address_handler(request):
     }
 
     if request.args:
-        search_value = request.args.get("searchVal")
+        search_value = request.args.get("searchValue")
         print(f"search_value = {search_value}")
 
         one_map_api_result = one_map_api(search_value)
