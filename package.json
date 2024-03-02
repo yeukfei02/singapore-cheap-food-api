@@ -12,6 +12,7 @@
   "scripts": {
     "deploy": "serverless deploy",
     "package": "serverless package",
-    "remove": "serverless remove"
+    "remove": "serverless remove",
+    "doctor": "serverless doctor"
   }
 }

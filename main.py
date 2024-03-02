@@ -1,18 +1,6 @@
 import requests
 
 
-def main_handler(request):
-    response = {
-        "message": "singapore-cheap-food-api"
-    }
-
-    headers = {
-        "Access-Control-Allow-Origin": "*"
-    }
-
-    return (response, 200, headers)
-
-
 def find_address_handler(request):
     print(f"request.args = {request.args}")
 
