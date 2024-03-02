@@ -13,17 +13,12 @@ provider:
   timeout: 540s
 
 functions:
-  main:
-    handler: main_handler
-    events:
-      - http: "GET /"
-        
   findAddress:
     handler: find_address_handler
     events:
       - http: "GET /find-address"
     memorySize: 2048
-        
+
   getCheapFood:
     handler: get_cheap_food_handler
     events:

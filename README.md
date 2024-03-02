@@ -2,9 +2,7 @@
 
 singapore-cheap-food-api
 
-documentation: <>
-
-main api url: <https://asia-southeast1-singapore-cheap-food-api.cloudfunctions.net/singapore-cheap-food-api-prod-main>
+documentation: <https://documenter.getpostman.com/view/3827865/2sA2xb6FUL>
 
 findAddress api url: <https://asia-southeast1-singapore-cheap-food-api.cloudfunctions.net/singapore-cheap-food-api-prod-findAddress>
 
@@ -32,4 +30,7 @@ $ yarn run package
 
 // remove serverless services in google cloud
 $ yarn run remove
+
+// check serverless.yml
+$ yarn run doctor
 ```
