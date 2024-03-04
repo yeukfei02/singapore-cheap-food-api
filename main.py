@@ -29,7 +29,7 @@ def find_address_handler(request):
 
 
 def get_cheap_food_handler(request):
-    print(f"request.args = {request.args}")
+    print(f"request = {request}")
 
     get_budget_meal_result = get_budget_meal_api()
 
@@ -59,10 +59,10 @@ def one_map_api(search_value):
         }
 
         response = requests.get(root_url, params=params)
-        print(f"response = {response}")
+        # print(f"response = {response}")
 
         response_json = response.json()
-        print(f"response_json = {response_json}")
+        # print(f"response_json = {response_json}")
 
         if response_json:
             formatted_results = []
@@ -104,10 +104,10 @@ def get_budget_meal_api():
         root_url = "https://www.gowhere.gov.sg/budgetmeal/data/data.json"
 
         response = requests.get(root_url)
-        print(f"response = {response}")
+        # print(f"response = {response}")
 
         response_json = response.json()
-        print(f"response_json = {response_json}")
+        # print(f"response_json = {response_json}")
 
         if response_json:
             formatted_data = []
